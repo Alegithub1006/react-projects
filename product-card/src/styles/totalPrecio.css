@@ -1,0 +1,22 @@
+.totalprice-container {
+  margin: auto;
+  margin-top: 40px;
+  border: 2px solid #222;
+  border-radius: 10px;
+  background-color: #222;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.totalprice-container p {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+.totalprice-container span {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}

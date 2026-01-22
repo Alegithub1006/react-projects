@@ -1,0 +1,41 @@
+/* Ocultamos el checkbox nativo */
+input[type="checkbox"] {
+  appearance: none; /* elimina estilos por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Estado marcado */
+input[type="checkbox"]:checked {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+/* Ícono del check */
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: #eee;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-task {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: start;
+}
+.container-list-item {
+  list-style: none;
+}

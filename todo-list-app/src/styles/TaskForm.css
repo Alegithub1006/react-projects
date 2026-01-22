@@ -1,0 +1,116 @@
+.container-form {
+  width: 100%;
+}
+
+.container-form-box {
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 10px;
+  border-radius: 12px;
+  border: 1px solid #2221;
+  box-shadow: 1px 1px 10px #2221;
+}
+
+.container-form-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+.container-form-img-icon {
+  color: var(--primary-color);
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+.container-form-body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-form-body-title {
+  color: var(--primary-color);
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.container-form-body-text {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  width: 60%;
+}
+.container-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 300px;
+  margin: 10px 0;
+  padding: 10px 4px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.container-form {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2224;
+  backdrop-filter: blur(8px); /* difumina lo que está detrás */
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.container-form-modal {
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  border-radius: 12px;
+  border: 1px solid #2221;
+  box-shadow: 1px 1px 10px #2222;
+}
+
+.container-form-label {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.container-form-label input {
+  margin: 5px 0;
+  font-size: 18px;
+  border: 2px solid #2221;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.container-form-buttons {
+  display: flex;
+  gap: 4px;
+}

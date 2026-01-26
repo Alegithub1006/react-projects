@@ -1,0 +1,112 @@
+.button-add {
+  margin: 8px 4px;
+  font-size: 1rem;
+  background-color: #48e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.button-add:hover {
+  outline: none;
+  transition: all 0.2s;
+  background-color: #137;
+}
+.button-add:active {
+  outline: none;
+  transition: all 1s;
+  background-color: #137;
+}
+.button-add:focus {
+  outline: none;
+  transition: all 1s;
+  background-color: #137;
+}
+
+.span-items {
+  margin-top: 5px;
+  background-color: #137;
+  padding: 2px 6px;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-radius: 10px;
+}
+
+.modal-container {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  border: none;
+  backdrop-filter: blur(8px); /* difumina lo que está detrás */
+  -webkit-backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+}
+.modal-container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px 12px;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+}
+
+.modal-container-header {
+  display: flex;
+  justify-content: start;
+  padding: 2px 6px;
+  color: #222;
+}
+.modal-container-header h3 {
+  color: #222;
+}
+
+.modal-container-inputs-box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.modal-container-inputs-box p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  padding-top: 4px;
+  font-weight: 600;
+  color: #222;
+}
+.modal-container-inputs-box input {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 20px;
+  display: block;
+
+  color: #222;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 4px 10px;
+  background-color: #fff;
+}
+.modal-container-buttons {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+}
+.button-modal {
+  padding: 6px 8px;
+  font-size: 1rem;
+  background-color: #48e;
+  color: #fff;
+  border: 2px solid #48e;
+  border-radius: 10px;
+}

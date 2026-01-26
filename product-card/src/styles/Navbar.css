@@ -1,0 +1,16 @@
+.nav-bar-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  border-bottom: 1px solid #eee5;
+  box-shadow: 0 10px 10px #eee5;
+}
+
+.nav-bar-container-title {
+  color: #48e;
+  font-size: 1.3rem;
+}

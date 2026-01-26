@@ -1,10 +1,6 @@
 import "../styles/producto.css";
 
-export function Producto({
-  nombre = "unknown",
-  precio = 0,
-  categoria = "unknown",
-}) {
+export function Producto({ nombre, precio, categoria, onDelete }) {
   return (
     <div className="container">
       <div className="product-box">
@@ -12,7 +8,17 @@ export function Producto({
           <p className="product-box-category">{categoria}</p>
           <p className="product-box-price">${precio}</p>
         </div>
-        <h4 className="product-box-name">{nombre}</h4>
+        <div className="product-box-body">
+          <h4 className="product-box-name">{nombre}</h4>
+
+          <button
+            className="product-box-button"
+            onClick={() => {
+              onDelete(nombre);
+            }}>
+            delete
+          </button>
+        </div>
       </div>
     </div>
   );

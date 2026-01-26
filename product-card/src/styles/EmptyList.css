@@ -1,0 +1,30 @@
+.empty-container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #2222;
+}
+
+.empty-container-body {
+  text-align: center;
+}
+.empty-container-body-title {
+  padding-bottom: 6px;
+  color: #48e;
+  font-size: 1.2rem;
+}
+.empty-container-body-text {
+  font-size: 12px;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+}

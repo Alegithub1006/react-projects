@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../public/fonts/Roboto-Regular.ttf");
+}
+
+:root {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: #135bec;
+  --success-color: #10b981;
+  --review-color: #f59e0b;
+  --white-color: #fff;
+  --surface-color: #f6f6f8;
+  --dark-color: #101622;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "id": "1",
+    "name": "React Basics",
+    "flashcards": [
+      {
+        "id": "1-1",
+        "question": "¿Qué es React?",
+        "answer": "Una librería de JavaScript para construir interfaces de usuario."
+      },
+      {
+        "id": "1-2",
+        "question": "¿Qué es un componente?",
+        "answer": "Una función o clase que devuelve elementos de UI."
+      },
+      {
+        "id": "1-3",
+        "question": "¿Qué es JSX?",
+        "answer": "Sintaxis que permite escribir HTML dentro de JavaScript."
+      },
+      {
+        "id": "1-4",
+        "question": "¿Qué hook se usa para manejar estado?",
+        "answer": "useState."
+      },
+      {
+        "id": "1-5",
+        "question": "¿Qué hook se usa para efectos secundarios?",
+        "answer": "useEffect."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "JavaScript Fundamentals",
+    "flashcards": [
+      {
+        "id": "2-1",
+        "question": "¿Qué es una variable?",
+        "answer": "Un contenedor para almacenar datos."
+      },
+      {
+        "id": "2-2",
+        "question": "¿Qué diferencia hay entre let y const?",
+        "answer": "let permite reasignación, const no."
+      },
+      {
+        "id": "2-3",
+        "question": "¿Qué es una función?",
+        "answer": "Un bloque de código reutilizable."
+      },
+      {
+        "id": "2-4",
+        "question": "¿Qué es un objeto?",
+        "answer": "Una colección de pares clave-valor."
+      },
+      {
+        "id": "2-5",
+        "question": "¿Qué es un array?",
+        "answer": "Una lista ordenada de elementos."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "HTML Essentials",
+    "flashcards": [
+      {
+        "id": "3-1",
+        "question": "¿Qué significa HTML?",
+        "answer": "HyperText Markup Language."
+      },
+      {
+        "id": "3-2",
+        "question": "¿Qué etiqueta define un párrafo?",
+        "answer": "<p>."
+      },
+      {
+        "id": "3-3",
+        "question": "¿Qué etiqueta se usa para imágenes?",
+        "answer": "<img>."
+      },
+      {
+        "id": "3-4",
+        "question": "¿Qué etiqueta se usa para enlaces?",
+        "answer": "<a>."
+      },
+      {
+        "id": "3-5",
+        "question": "¿Qué etiqueta define encabezados?",
+        "answer": "<h1> a <h6>."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "CSS Basics",
+    "flashcards": [
+      {
+        "id": "4-1",
+        "question": "¿Qué significa CSS?",
+        "answer": "Cascading Style Sheets."
+      },
+      {
+        "id": "4-2",
+        "question": "¿Cómo se aplica un color de fondo?",
+        "answer": "background-color."
+      },
+      {
+        "id": "4-3",
+        "question": "¿Qué propiedad cambia el tamaño de fuente?",
+        "answer": "font-size."
+      },
+      {
+        "id": "4-4",
+        "question": "¿Qué propiedad controla el margen?",
+        "answer": "margin."
+      },
+      {
+        "id": "4-5",
+        "question": "¿Qué propiedad controla el padding?",
+        "answer": "padding."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Computer Science Basics",
+    "flashcards": [
+      {
+        "id": "5-1",
+        "question": "¿Qué es un algoritmo?",
+        "answer": "Un conjunto de pasos para resolver un problema."
+      },
+      {
+        "id": "5-2",
+        "question": "¿Qué es una estructura de datos?",
+        "answer": "Una forma de organizar y almacenar información."
+      },
+      {
+        "id": "5-3",
+        "question": "¿Qué es la complejidad temporal?",
+        "answer": "El tiempo que tarda un algoritmo en ejecutarse."
+      },
+      {
+        "id": "5-4",
+        "question": "¿Qué es la complejidad espacial?",
+        "answer": "La memoria que usa un algoritmo."
+      },
+      {
+        "id": "5-5",
+        "question": "¿Qué es una pila (stack)?",
+        "answer": "Una estructura LIFO (Last In, First Out)."
+      }
+    ]
+  }
+]

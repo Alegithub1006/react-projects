@@ -4,15 +4,7 @@ export function ListCard({ cards }) {
   return (
     <>
       {cards.map((c) => {
-        return (
-          <div key={c.id}>
-            <h2>{c.name}</h2>
-
-            <div>
-              
-            </div>
-          </div>
-        );
+        return <FlashCard id={c.id} name={c.name} flashCard={c.flashcards} />;
       })}
     </>
   );

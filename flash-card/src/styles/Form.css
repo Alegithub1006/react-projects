@@ -1,0 +1,153 @@
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.input-label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  width: 90%;
+}
+.input {
+  width: 90%;
+  margin: 0 10px;
+  border: none;
+  outline: none;
+  background-color: var(--surface-color);
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #444;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.flashcard-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flashcard-section span {
+  color: #444;
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+}
+.flashcard-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flashcard-header p {
+  color: #444;
+}
+
+.flashcard-box {
+  width: 100%;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.flashcard-box-header {
+  background-color: var(--surface-color);
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flashcard-box-header p {
+  margin-left: 20px;
+}
+.flashcard-box-header button {
+  border: none;
+  outline: none;
+  background-color: var(--surface-color);
+  margin-right: 20px;
+}
+
+.flashcard-button-add {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 2px dashed #444;
+  background-color: var(--surface-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #444;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.flashcard-textarea {
+  width: 100%;
+  background-color: var(--white-color);
+  border-top: 1px #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+}
+.textarea-box {
+  margin: 0 4px;
+  padding: 4px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+.textarea-box p {
+  color: #444;
+  font-weight: 800;
+  font-size: 10px;
+}
+.textarea-box textarea {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.textarea-box:last-child {
+  border-left: 1px solid var(--surface-color);
+}

@@ -1,0 +1,62 @@
+.container-card {
+  background-image: url("../assets//flascard-img.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container-card-header {
+  width: 100%;
+  height: 40%;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.container-card-title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.container-card-flashcards {
+  margin: 0;
+  padding: 0;
+  color: #aaa;
+  font-size: 12px;
+}
+.container-card-text {
+  margin: auto;
+  width: 90%;
+}
+.container-card-buttons {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+.container-card-button {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: none;
+}
+.start {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 90%;
+  height: 80%;
+}

@@ -1,0 +1,44 @@
+.button-add {
+  background-color: var(--surfcae-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: 2px dashed #aaa;
+  width: 325px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.icon-container {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  background-color: #c7dbee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.button-text h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.button-text p {
+  color: #aaa;
+  max-width: 80%;
+  text-align: center;
+  font-size: 12px;
+}

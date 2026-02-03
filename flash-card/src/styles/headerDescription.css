@@ -1,0 +1,20 @@
+.description {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.description h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  max-width: 400px;
+}
+
+.description p {
+  max-width: 700px;
+}

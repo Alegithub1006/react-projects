@@ -1,28 +1,15 @@
-import { useState } from "react";
 import "./App.css";
-import { Task } from "./components/Task";
 import { TaskForm } from "./components/TaskForm";
 import { TaskList } from "./components/TaskList";
 import { CounterTask } from "./components/CounterTask";
 import { NavBar } from "./components/NavBar";
+import { useTask } from "./hooks/task";
 
 function App() {
-  const [task, setTask] = useState([]);
-
-  const onToogle = (title) => {
-    setTask((prevTask) =>
-      prevTask.map((t) =>
-        t.title === title ? { ...t, completed: !t.completed } : t,
-      ),
-    );
-  };
-
-  const handleDeleteTask = (title) => {
-    setTask(task.filter((t) => t.title !== title));
-  };
+  const { task, setTask, onToogle, handleDeleteTask } = useTask();
   return (
     <main>
-      <NavBar />
+      <NavBar task={task} />
       <CounterTask task={task} />
       <section className="section-task">
         {task.length > 0 && (

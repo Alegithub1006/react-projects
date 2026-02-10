@@ -1,20 +1,9 @@
 import "../../src/App.css";
+import { useColorTask } from "../hooks/taskColor";
 import "../styles/Task.css";
 
 export function Task({ completed, title, priority, onToggle, onDelete }) {
-  const rootStyles = getComputedStyle(document.documentElement);
-  const success = rootStyles.getPropertyValue("--success-color").trim();
-  const medium = rootStyles.getPropertyValue("--medium-color").trim();
-  const hard = rootStyles.getPropertyValue("--hard-color").trim();
-  let color = "#222";
-  if (priority === "low") {
-    color = success;
-  } else if (priority === "mid") {
-    color = medium;
-  } else if (priority === "max") {
-    color = hard;
-  }
-
+  const { color } = useColorTask({ priority });
   return (
     <div
       className="task-container"

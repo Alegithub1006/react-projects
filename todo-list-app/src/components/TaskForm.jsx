@@ -1,31 +1,17 @@
-import { useState } from "react";
 import "../styles/TaskForm.css";
 import { ListTodo, SendHorizonal } from "lucide-react";
+import { useTaskForm } from "../hooks/taskForm";
 
 export function TaskForm({ taskInput, setTaskInput, task }) {
-  const [title, setTitle] = useState("");
-  const [priority, setPriority] = useState("");
-  const [showModal, isShowmodal] = useState(false);
-
-  const handleChangeInput = (e) => {
-    setTitle(e.target.value);
-  };
-  const handleSetPriority = (e) => {
-    setPriority(e.target.value);
-  };
-
-  const openModal = () => {
-    isShowmodal(!showModal);
-  };
-
-  const handleAddTask = (e) => {
-    e.preventDefault();
-    setTaskInput([...taskInput, { title, priority, completed: false }]);
-    setTitle("");
-    setPriority("");
-    isShowmodal(false);
-  };
-
+  const {
+    title,
+    priority,
+    showModal,
+    handleAddTask,
+    handleChangeInput,
+    handleSetPriority,
+    openModal,
+  } = useTaskForm({ taskInput, setTaskInput });
   return (
     <>
       {showModal ? (
@@ -43,7 +29,7 @@ export function TaskForm({ taskInput, setTaskInput, task }) {
             <label>
               selecciona la categoria
               <select value={priority} onChange={handleSetPriority}>
-                <option value={""}> </option>
+                <option value={"select your category"}> </option>
                 <option value={"low"}>low</option>
                 <option value={"mid"}>mid</option>
                 <option value={"max"}>max</option>
@@ -66,7 +52,9 @@ export function TaskForm({ taskInput, setTaskInput, task }) {
           </div>
           {task.length === 0 && (
             <div className="container-form-body">
-              <h2 className="container-form-body-title">
+              <h2
+                data-testid="text-no-task"
+                className="container-form-body-title">
                 no hay tareas pendientes
               </h2>
               <p className="container-form-body-text">

@@ -1,17 +1,9 @@
 import { AlertCircle, CheckCircle2, ListCheck, Timer } from "lucide-react";
 import "../styles/CounterTask.css";
+import { useCounterTask } from "../hooks/counterTask";
 
 export function CounterTask({ task }) {
-  const alltask = task.length;
-
-  const completedTAsk = task.reduce(
-    (acc, task) => (task.completed ? acc + 1 : acc),
-    0,
-  );
-  const noCompletedTAsk = task.reduce(
-    (acc, task) => (!task.completed ? acc + 1 : acc),
-    0,
-  );
+  const { alltask, completedTAsk, noCompletedTAsk } = useCounterTask({ task });
 
   return (
     <section className="dashborad-container">

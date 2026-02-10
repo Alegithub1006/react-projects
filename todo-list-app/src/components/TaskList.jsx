@@ -1,24 +1,9 @@
-import { Task } from "./Task";
 import { TaskForm } from "./TaskForm";
 import "../styles/tasklist.css";
+import { useTaskList } from "../hooks/taskList";
 
 export function TaskList({ task, setTask, onToogle, onDelete }) {
-  // const filteredTaskList= task.filter(prevTask=>{
-  //   prevTask
-  // })
-  const tasklist = task.map((t) => {
-    return (
-      <li className="container-list-item" key={t.title}>
-        <Task
-          onToggle={onToogle}
-          title={t.title}
-          priority={t.priority}
-          completed={t.completed}
-          onDelete={onDelete}
-        />
-      </li>
-    );
-  });
+  const { tasklist } = useTaskList({ task, onDelete, onToogle });
   return (
     <div className="container">
       <ul className="container-list">

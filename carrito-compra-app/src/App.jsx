@@ -4,19 +4,19 @@ import { Header } from "./components/Header";
 import { useFilter } from "./hooks/useFilter";
 import { Footer } from "./components/Footer";
 import { Cart } from "./components/Cart";
-import { Cartprovider } from "./context/cart";
+import { CartProvider } from "./context/cart";
 
 function App() {
   const { filteredProducts } = useFilter();
   const filterProducts = filteredProducts(initialProducts);
 
   return (
-    <Cartprovider>
+    <CartProvider>
       <Header />
       <Cart />
       <Product products={filterProducts} />
       <Footer />
-    </Cartprovider>
+    </CartProvider>
   );
 }
 
